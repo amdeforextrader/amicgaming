@@ -1,3 +1,4 @@
+alert("JS is working");
 window.onload = function () {
 
 let snake = [];
