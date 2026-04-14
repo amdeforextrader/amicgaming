@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Danmogaji Game Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🎮 Danmogaji Game Hub</h1>
+  <p>Play fun mini games online</p>
+</header>
+
+<main>
+
+  <!-- CLICK GAME -->
+  <section class="game">
+    <h2>🎯 Click Speed Game</h2>
+    <button onclick="startGame()">Start</button>
+    <button id="clickBtn" onclick="clicked()">CLICK ME!</button>
+    <p id="result"></p>
+  </section>
+
+  <!-- GUESS GAME -->
+  <section class="game">
+    <h2>🔢 Guess the Number</h2>
+    <input type="number" id="guessInput" placeholder="1 - 10">
+    <button onclick="checkGuess()">Guess</button>
+    <p id="guessResult"></p>
+  </section>
+
+  <!-- QUIZ GAME -->
+  <section class="game">
+    <h2>🧠 Quiz</h2>
+    <p>What is 5 + 3?</p>
+    <button onclick="quiz(8)">8</button>
+    <button onclick="quiz(10)">10</button>
+    <p id="quizResult"></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Danmogaji | Built with HTML, CSS & JS</p>
+</footer>
+
+<!-- Link JS -->
+<script src="scripts.js"></script>
+
+</body>
+</html>
